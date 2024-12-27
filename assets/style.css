@@ -1,0 +1,20 @@
+/* 
+:first-child - перша дитина свого батька
+:first-of-type - перша дитина ТАКОГО ТИПУ 
+
+*/
+
+
+/* Task1
+
+Вибрати першу лішку першого улу
+
+ul:first-of-type > li:first-child{
+    color: blue;
+}
+*/
+
+ul:first-of-type{
+    color: blue;
+}
+  
