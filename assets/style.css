@@ -14,7 +14,24 @@ ul:first-of-type > li:first-child{
 }
 */
 
-ul:first-of-type{
+ul:first-of-type > li:first-child{
     color: blue;
 }
-  
+
+li:last-child {
+    color: red;
+}
+
+li:last-of-type {
+    color: brown;
+}
+
+/* Остання лішку у останньому улу 
+
+ul:last-of-type >li:last-child {
+    color: green;
+}*/
+
+ul:last-of-type >li:last-child {
+    color: green;
+}
