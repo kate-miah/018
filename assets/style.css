@@ -9,6 +9,10 @@
 :nth-child() - кожна енна дитина свого батька
 :nth-last-child() - кожна енна дитина з кінця
 
+:nth-of-type() - кожна енна ТАКА дитина свого батька
+:nth-last-of-type() - кожна енна ТАКА дитина з кінця
+
+
 */
 
 
@@ -55,6 +59,6 @@ ul:last-of-type >li:last-child {
     display: inline-block;
 }
 
-.box:nth-last-child(3n+1) {
+main :nth-last-of-type(2n) {
     background-color: violet;
 }
