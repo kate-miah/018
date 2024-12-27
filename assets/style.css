@@ -15,6 +15,8 @@
 :only-child - едина дитина свого батька
 :only-of-type - едина ТАКА (такого типу) дитина свого батька
 
+
+:empty - пустий елемент без нащадків (текст також вважається нащадком)
 */
 
 .box {
@@ -29,4 +31,13 @@ p:only-child {
 
 body :only-of-type {
     color: violet;
+}
+
+body :empty {
+    background-color: brown;
+}
+
+.par {
+    width: 20px;
+    height: 20px;
 }
