@@ -51,17 +51,10 @@ ul:last-of-type >li:last-child {
 .box {
     width: 100px;
     height: 100px;
+    border: 2px solid black;
     display: inline-block;
 }
 
-.box:nth-child(1n) {
-    background-color: red;
-} 
-
-.box:nth-child(2n) {
-    background-color: green;
-}
-
-.box:nth-child(3n) {
-    background-color: blue;
+.box:nth-last-child(3n+1) {
+    background-color: violet;
 }
