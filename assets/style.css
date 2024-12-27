@@ -5,6 +5,10 @@
 :last-child - остання дитина свого батька
 :last-of-type - остання ТАКА дитина свого батька
 
+
+:nth-child() - кожна енна дитина свого батька
+:nth-last-child() - кожна енна дитина з кінця
+
 */
 
 
@@ -16,34 +20,12 @@ ul:first-of-type > li:first-child{
     color: blue;
 }
 */
-
-ul:first-of-type > li:first-child{
-    color: blue;
-}
-
-li:last-child {
-    color: red;
-}
-
-li:last-of-type {
-    color: brown;
-}
-
 /* Task2
 Остання лішку у останньому улу 
 
 ul:last-of-type >li:last-child {
     color: green;
 }*/
-
-ul:last-of-type >li:last-child {
-    color: green;
-}
-
-li:nth-child(2n+1) {
-    color: blueviolet;
-}
-
 
 /* 
 
@@ -65,3 +47,21 @@ li:nth-child(2n+1) {
 2n+1 - odd - кожна непарна дитина
 
 */
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.box:nth-child(1n) {
+    background-color: red;
+} 
+
+.box:nth-child(2n) {
+    background-color: green;
+}
+
+.box:nth-child(3n) {
+    background-color: blue;
+}
