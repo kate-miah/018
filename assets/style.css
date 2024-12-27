@@ -1,6 +1,9 @@
 /* 
 :first-child - перша дитина свого батька
-:first-of-type - перша дитина ТАКОГО ТИПУ 
+:first-of-type - перша дитина ТАКОГО ТИПУ
+
+:last-child - остання дитина свого батька
+:last-of-type - остання ТАКА дитина свого батька
 
 */
 
@@ -26,7 +29,8 @@ li:last-of-type {
     color: brown;
 }
 
-/* Остання лішку у останньому улу 
+/* Task2
+Остання лішку у останньому улу 
 
 ul:last-of-type >li:last-child {
     color: green;
@@ -35,3 +39,29 @@ ul:last-of-type >li:last-child {
 ul:last-of-type >li:last-child {
     color: green;
 }
+
+li:nth-child(2n+1) {
+    color: blueviolet;
+}
+
+
+/* 
+
+3n 
+
+3*0=0
+3*1=3
+3*2=6
+3*3=9
+
+4n
+
+4*0=0
+4*1=4
+4*2=8
+4*3=12
+
+2n -even - кожна друга (парна) дитина
+2n+1 - odd - кожна непарна дитина
+
+*/
