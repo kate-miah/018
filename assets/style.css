@@ -18,26 +18,56 @@
 
 :empty - пустий елемент без нащадків (текст також вважається нащадком)
 */
+* {
+    padding: 0;
+    margin: 0;
+}
+body { 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 
-.box {
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
 }
 
-p:only-child {
-    color: red;
+thead {
+    background-color: rgba(70, 70, 238);
+    color: white;
 }
 
-body :only-of-type {
-    color: violet;
+span {
+    font-size: 20px;
+    font-weight: bold;
+}
+tbody tr {
+    color: grey;
 }
 
-body :empty {
-    background-color: brown;
+tbody tr td:first-child {
+    background-color:rgba(28, 178, 85);
+    color: white;
+}
+tbody tr:nth-of-type(2n) :first-child {
+    background-color: rgba(32, 225, 83);
 }
 
-.par {
-    width: 20px;
-    height: 20px;
+tbody tr:nth-of-type(2n) {
+    background-color: rgba(233, 234, 237);
+    color: grey;
 }
+
+td {
+    padding: 20px 40px;
+}
+button {
+    background-color: rgb(47, 61,188);
+    color: white;
+    font-size: 1em;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+
+}
+
+
+/* #3542bb00 
+
+#e9eaed00*/
